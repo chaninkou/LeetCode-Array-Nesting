@@ -1,4 +1,4 @@
-package nesting;
+package leetcode565;
 
 public class DfsFindLongestSetLengthFunction {
 	// We stop adding right before a duplicate element occurs in S.
@@ -14,10 +14,8 @@ public class DfsFindLongestSetLengthFunction {
 		boolean[] visited = new boolean[nums.length];
 
 		for (int i = 0; i < nums.length; i++) {
-			// This is how we check if all element are all distinct
+			// To prevent duplicates
 			if (visited[i]) {
-				// Continue is like break, it stop the iteration, but continue
-				// the loop
 				continue;
 			}
 
@@ -28,6 +26,7 @@ public class DfsFindLongestSetLengthFunction {
 		return max;
 	}
 
+	// For each element, get the total count before duplicates element
 	private int getLength(int[] nums, int start, boolean[] visited) {
 		int i = start;
 		int count = 0;
