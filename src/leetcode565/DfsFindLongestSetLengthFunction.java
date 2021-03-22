@@ -7,7 +7,7 @@ public class DfsFindLongestSetLengthFunction {
 	 * A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
 	 * 
 	 * One of the longest S[K]: S[0] = {A[0], A[5], A[6], A[2]} = {5, 6, 2, 0}
-	 */
+	 */ 
 	public int arrayNesting(int[] nums) {
 		int max = Integer.MIN_VALUE;
 
