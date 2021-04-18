@@ -26,7 +26,7 @@ public class DfsFindLongestSetLengthFunction {
 		return max;
 	}
 
-	// For each element, get the total count before duplicates element
+	// For each element, get the total count before duplicate element
 	private int getLength(int[] nums, int start, boolean[] visited) {
 		int i = start;
 		int count = 0;
