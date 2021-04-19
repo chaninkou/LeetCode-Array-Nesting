@@ -1,7 +1,7 @@
 package leetcode565;
 
 public class DfsFindLongestSetLengthFunction {
-	// We stop adding right before a duplicate element occurs in S.
+	// We stop adding right before a duplicate element occurs in array.
 	/*
 	 * Input: A = [5,4,0,3,1,6,2] Output: 4 Explanation: A[0] = 5, A[1] = 4,
 	 * A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
